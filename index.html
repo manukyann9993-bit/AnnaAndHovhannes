@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hy">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Աննա և Դավիթ - Հարսանյաց Հրավեր</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="content">
+            <!-- Header with couple names -->
+            <div class="header">
+                <div class="names">
+                    <span class="name">Աննա</span>
+                    <span class="ampersand">&</span>
+                    <span class="name">Հովհաննես</span>
+                </div>
+            </div>
+
+            <!-- Main invitation text -->
+            <div class="invitation-text">
+                <h1 class="title">Մենք ամուսնանում ենք!</h1>
+                <p class="message">
+                    Սիրով հրավիրում ենք Ձեզ մեր կյանքի ամենակարևոր օրվա՝
+                    մեր հարսանիքի հանդիսավոր արարողությանը։
+                </p>
+                <p class="message">
+                    Ձեր ներկայությունը մեր համար անբավարար արժեք ունի,
+                    և մենք կուրախանանք կիսել այս հատուկ պահը Ձեզ հետ։
+                </p>
+                <p class="message special">
+                    Եկեք միասին ստեղծենք անմոռանալի հիշողություններ և
+                    տոնենք սերը, երջանկությունը և նոր սկիզբը։
+                </p>
+            </div>
+
+            <!-- Countdown timer -->
+            <div class="countdown-section">
+                <h2 class="countdown-title">Մնաց</h2>
+                <div class="countdown" id="countdown">
+                    <div class="time-box">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Օր</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Ժամ</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Րոպե</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Վայրկյան</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding date -->
+            <div class="date-section">
+                <div class="calendar">
+                    <div class="calendar-header">Ապրիլ 2026</div>
+                    <div class="calendar-grid">
+                        <div class="day-name">Կր</div>
+                        <div class="day-name">Եկ</div>
+                        <div class="day-name">Եր</div>
+                        <div class="day-name">Չք</div>
+                        <div class="day-name">Հգ</div>
+                        <div class="day-name">Ուր</div>
+                        <div class="day-name">Շբ</div>
+
+                        <div class="day empty"></div>
+                        <div class="day empty"></div>
+                        <div class="day empty"></div>
+                        <div class="day">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+
+                        <div class="day">5</div>
+                        <div class="day">6</div>
+                        <div class="day">7</div>
+                        <div class="day">8</div>
+                        <div class="day">9</div>
+                        <div class="day">10</div>
+                        <div class="day">11</div>
+
+                        <div class="day">12</div>
+                        <div class="day">13</div>
+                        <div class="day">14</div>
+                        <div class="day">15</div>
+                        <div class="day">16</div>
+                        <div class="day">17</div>
+                        <div class="day">18</div>
+
+                        <div class="day">19</div>
+                        <div class="day">20</div>
+                        <div class="day">21</div>
+                        <div class="day">22</div>
+                        <div class="day">23</div>
+                        <div class="day">24</div>
+                        <div class="day">25</div>
+
+                        <div class="day special">
+                            26
+                            <div class="heart">❤️</div>
+                        </div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                        <div class="day">29</div>
+                        <div class="day">30</div>
+                        <div class="day empty"></div>
+                        <div class="day empty"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding Schedule -->
+            <div class="schedule-section">
+                <h2 class="section-title">Օրվա Ծրագիր</h2>
+                <div class="schedule-timeline">
+                    <!-- Item 1: 12:00 - RIGHT -->
+                    <div class="timeline-item">
+                        <div class="time-left"></div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right">
+                            <div class="time">12:00</div>
+                            <div class="location">Հարսի տուն</div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: 10:30 - LEFT -->
+                    <div class="timeline-item">
+                        <div class="time-left">
+                            <div class="time">10:30</div>
+                            <div class="location">Փեսայի տուն</div>
+                        </div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right"></div>
+                    </div>
+
+                    <!-- Item 3: 15:00 - RIGHT -->
+                    <div class="timeline-item">
+                        <div class="time-left"></div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right">
+                            <div class="time">15:00</div>
+                            <div class="location">Պսակադրություն</div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: 17:00 - LEFT -->
+                    <div class="timeline-item">
+                        <div class="time-left">
+                            <div class="time">17:00</div>
+                            <div class="location">Ամուսնության գրանցում</div>
+                        </div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right"></div>
+                    </div>
+                </div>
+
+                <!-- Location Buttons -->
+                <div class="location-buttons">
+                    <a href="https://maps.google.com/?q=Groom+House+Yerevan" target="_blank" class="location-btn">
+                        <span class="location-icon">📍</span>
+                        <span class="location-text">Փեսայի տուն</span>
+                    </a>
+                    <a href="https://maps.google.com/?q=Bride+House+Yerevan" target="_blank" class="location-btn">
+                        <span class="location-icon">📍</span>
+                        <span class="location-text">Հարսի տուն</span>
+                    </a>
+                    <a href="https://maps.google.com/?q=Church+Yerevan" target="_blank" class="location-btn">
+                        <span class="location-icon">⛪</span>
+                        <span class="location-text">Եկեղեցի</span>
+                    </a>
+                    <a href="https://maps.google.com/?q=Wedding+Restaurant+Yerevan" target="_blank"
+                        class="location-btn">
+                        <span class="location-icon">🏛️</span>
+                        <span class="location-text">Ռեստորան</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer message -->
+            <div class="footer-message">
+                <p>Սիրով սպասում ենք Ձեզ!</p>
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
