@@ -416,7 +416,37 @@ body {
     }
 
     50% {
-        transform: scale(1.2);
+        transform: scale(1.05);
+    }
+}
+
+.footer-rings-decoration {
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.6;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.professional-rings-svg {
+    width: clamp(100px, 20vw, 140px);
+    height: auto;
+    filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.4));
+}
+
+/* Mobile Tweak for Large Icons */
+@media (max-width: 480px) {
+    .large-line-icon {
+        width: 100px;
+    }
+
+    .large-icon-wrapper {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .couple-line-art {
+        width: 160%;
+        opacity: 0.5;
     }
 }
 
