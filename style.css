@@ -223,11 +223,11 @@ body {
 }
 
 .title {
-    font-family: 'ArTarumianBardi', 'Noto Serif Armenian', serif;
+    font-family: 'ArTarumianBardi', 'Arian AMU', 'Noto Serif Armenian', serif;
     font-size: clamp(2rem, 7vw, 2.8rem);
     font-weight: 700;
-    font-style: italic;
-    /* Cursive look */
+    font-style: normal;
+    /* Using custom cursive fonts */
     color: var(--primary-color);
     margin-bottom: 35px;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
