@@ -15,8 +15,9 @@
     --text-color: #ffffff;
     --text-gold: #d4af37;
     --overlay-color: rgba(0, 0, 0, 0.45);
-    --gold-glow: 0 0 10px rgba(212, 175, 55, 0.5);
-    --white-neon: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(212, 175, 55, 0.3);
+    --gold-glow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.4);
+    --white-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    --bg-glass: rgba(255, 255, 255, 0.05);
 }
 
 body {
@@ -121,8 +122,16 @@ body {
 }
 
 .floral-svg {
-    width: 120px;
+    width: 160px;
     height: auto;
+    color: var(--primary-color);
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.6));
+    margin: 20px 0;
+}
+
+.floral-svg path {
+    stroke: var(--primary-color);
+    stroke-width: 1.2;
 }
 
 .floral-svg.small {
@@ -144,7 +153,7 @@ body {
     font-weight: 700;
     font-style: italic;
     color: var(--secondary-color);
-    text-shadow: var(--white-neon);
+    text-shadow: var(--gold-glow);
     animation: fadeIn 1.5s ease-out;
     letter-spacing: 2px;
 }
@@ -237,11 +246,12 @@ body {
 }
 
 .time-box {
-    background: rgba(0, 0, 0, 0.3);
+    background: var(--bg-glass);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 15px;
     padding: 20px 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     animation: scaleIn 0.6s ease-out backwards;
 }
 
@@ -418,7 +428,7 @@ body {
     font-style: italic;
     text-align: center;
     color: var(--secondary-color);
-    text-shadow: var(--white-neon);
+    text-shadow: var(--gold-glow);
     margin-bottom: 80px;
 }
 
@@ -541,17 +551,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    background: rgba(212, 175, 55, 0.2);
-    border: 2px solid var(--primary-color);
+    gap: 10px;
+    background: var(--bg-glass);
+    border: 1px solid var(--primary-color);
     border-radius: 15px;
     padding: 15px 20px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: 600;
     font-size: clamp(0.9rem, 3.5vw, 1rem);
     transition: all 0.3s ease;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: var(--white-shadow);
+    box-shadow: var(--gold-glow);
 }
 
 .location-btn:hover {
