@@ -40,15 +40,6 @@
                     <span class="ampersand">&</span>
                     <span class="name">Հովհաննես</span>
                 </div>
-                <!-- Large Couple Line Art Overlay -->
-                <div class="couple-line-art">
-                    <svg viewBox="0 0 100 120" class="couple-svg">
-                        <path d="M50,20 Q60,10 70,25 T65,45 M62,45 Q75,70 65,100 M65,55 Q50,65 55,90" fill="none"
-                            stroke="white" stroke-width="0.5" />
-                        <path d="M35,15 Q30,5 25,18 T32,38 M32,38 Q20,65 30,100 M32,48 Q42,58 40,90" fill="none"
-                            stroke="white" stroke-width="0.5" />
-                    </svg>
-                </div>
                 <div class="header-decoration">
                     <svg viewBox="0 0 200 60" class="floral-svg">
                         <path d="M10,30 Q50,0 100,30 T190,30" fill="none" stroke="currentColor" stroke-width="1.5" />
@@ -183,66 +174,46 @@
             <div class="schedule-section">
                 <h2 class="section-title animate-on-scroll">Օրվա Ծրագիր</h2>
                 <div class="schedule-timeline">
-                    <!-- Item 1: Church -->
+                    <!-- Item 1: 15:20 - RIGHT -->
                     <div class="timeline-item animate-on-scroll">
-                        <div class="schedule-content">
+                        <div class="time-left"></div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right">
                             <div class="time">15:20</div>
                             <div class="location">Սաղմոսավանք</div>
-                            <div class="large-icon-wrapper">
-                                <svg viewBox="0 0 100 100" class="large-line-icon">
-                                    <path
-                                        d="M50,5 L50,15 M43,10 L57,10 M30,45 L50,15 L70,45 M30,45 L30,90 L70,90 L70,45 M50,45 L50,90 M35,65 L45,65 M55,65 L65,65"
-                                        fill="none" stroke="currentColor" stroke-width="1" />
-                                    <path d="M44,75 L56,75 L56,90 L44,90 Z" fill="none" stroke="currentColor"
-                                        stroke-width="1" />
-                                </svg>
-                            </div>
-                            <a href="https://maps.app.goo.gl/uXfRntnS8q7dNo697" target="_blank"
-                                class="location-btn">Տեսնել Քարտեզում</a>
                         </div>
                     </div>
 
-                    <!-- Item 2: Restaurant -->
+                    <!-- Item 2: 18:30 - LEFT -->
                     <div class="timeline-item animate-on-scroll">
-                        <div class="schedule-content">
+                        <div class="time-left">
                             <div class="time">18:30</div>
                             <div class="location">Ռենեսանս</div>
-                            <div class="large-icon-wrapper">
-                                <svg viewBox="0 0 100 100" class="large-line-icon">
-                                    <path
-                                        d="M20,90 L80,90 M25,90 L25,45 Q50,15 75,45 L75,90 M50,45 L50,20 M42,20 L58,20 M35,65 L65,65 M35,55 L65,55"
-                                        fill="none" stroke="currentColor" stroke-width="1" />
-                                    <circle cx="50" cy="35" r="4" fill="none" stroke="currentColor"
-                                        stroke-width="0.8" />
-                                </svg>
-                            </div>
-                            <a href="https://maps.app.goo.gl/WgeVp6SFrn7X6pXb8" target="_blank"
-                                class="location-btn">Տեսնել Քարտեզում</a>
                         </div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right"></div>
                     </div>
                 </div>
 
-
-                <!-- Large Professional Rings Decoration -->
-                <div class="footer-rings-decoration">
-                    <svg viewBox="0 0 200 100" class="professional-rings-svg">
-                        <circle cx="85" cy="50" r="35" fill="none" stroke="var(--primary-color)" stroke-width="1.5"
-                            opacity="0.6" />
-                        <circle cx="115" cy="50" r="35" fill="none" stroke="var(--primary-color)" stroke-width="1.5"
-                            opacity="0.6" />
-                        <path d="M85,15 Q100,10 115,15" fill="none" stroke="var(--primary-color)" stroke-width="1"
-                            opacity="0.4" />
-                    </svg>
+                <!-- Location Buttons -->
+                <div class="location-buttons animate-on-scroll">
+                    <a href="https://maps.app.goo.gl/uXfRntnS8q7dNo697" target="_blank" class="location-btn">
+                        <span class="location-icon">⛪</span>
+                        <span class="location-text">Եկեղեցի</span>
+                    </a>
+                    <a href="https://maps.app.goo.gl/WgeVp6SFrn7X6pXb8" target="_blank" class="location-btn">
+                        <span class="location-icon">🏛️</span>
+                        <span class="location-text">Ռեստորան</span>
+                    </a>
                 </div>
             </div>
-        </div>
 
-        <!-- Footer message -->
-        <div class="footer-message animate-on-scroll">
-            <p>Սիրով սպասում ենք Ձեզ!</p>
-            <div class="divider"></div>
+            <!-- Footer message -->
+            <div class="footer-message animate-on-scroll">
+                <p>Սիրով սպասում ենք Ձեզ!</p>
+                <div class="divider"></div>
+            </div>
         </div>
-    </div>
     </div>
 
     <script src="script.js"></script>
