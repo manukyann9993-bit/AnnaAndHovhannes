@@ -35,10 +35,20 @@
         <div class="content">
             <!-- Header with couple names -->
             <div class="header animate-on-scroll">
-                <div class="names">
+                <div class="names-container">
                     <span class="name">Աննա</span>
                     <span class="ampersand">&</span>
                     <span class="name">Հովհաննես</span>
+                </div>
+                <!-- Large Couple Line Art Overlay -->
+                <div class="couple-line-art">
+                    <svg viewBox="0 0 200 200" class="couple-svg">
+                        <path d="M100,40 Q110,30 120,40 T130,60 Q130,80 100,120 Q70,80 70,60 T80,40 T100,40" fill="none"
+                            stroke="white" stroke-width="1" opacity="0.6" />
+                        <path d="M60,150 Q100,130 140,150" fill="none" stroke="white" stroke-width="1.5"
+                            opacity="0.8" />
+                        <path d="M80,160 Q100,180 120,160" fill="none" stroke="white" stroke-width="1" opacity="0.5" />
+                    </svg>
                 </div>
                 <div class="header-decoration">
                     <svg viewBox="0 0 200 60" class="floral-svg">
@@ -176,45 +186,63 @@
                 <div class="schedule-timeline">
                     <!-- Item 1: 12:00 - RIGHT -->
                     <div class="timeline-item animate-on-scroll">
-                        <div class="time-left"></div>
-                        <div class="ring-icon"></div>
-                        <div class="time-right">
+                        <div class="time-left">
                             <div class="time">15:20</div>
                             <div class="location">Սաղմոսավանք</div>
+                            <!-- Large Church Icon -->
+                            <div class="large-icon-wrapper">
+                                <svg viewBox="0 0 100 100" class="large-line-icon">
+                                    <path
+                                        d="M50,10 L30,40 L70,40 Z M30,40 L30,80 L70,80 L70,40 M50,10 L50,80 M40,60 L60,60"
+                                        fill="none" stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                                <a href="https://maps.app.goo.gl/uXfRntnS8q7dNo697" target="_blank"
+                                    class="location-btn">Տեսնել Քարտեզում</a>
+                            </div>
                         </div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right"></div>
                     </div>
 
                     <!-- Item 2: 10:30 - LEFT -->
                     <div class="timeline-item animate-on-scroll">
-                        <div class="time-left">
+                        <div class="time-left"></div>
+                        <div class="ring-icon"></div>
+                        <div class="time-right">
                             <div class="time">18:30</div>
                             <div class="location">Ռենեսանս</div>
+                            <!-- Large Restaurant Icon -->
+                            <div class="large-icon-wrapper">
+                                <svg viewBox="0 0 100 100" class="large-line-icon">
+                                    <path d="M20,80 L80,80 M30,80 L30,50 Q50,20 70,50 L70,80 M50,20 L50,10" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                                <a href="https://maps.app.goo.gl/WgeVp6SFrn7X6pXb8" target="_blank"
+                                    class="location-btn">Տեսնել Քարտեզում</a>
+                            </div>
                         </div>
-                        <div class="ring-icon"></div>
-                        <div class="time-right"></div>
                     </div>
                 </div>
 
 
                 <!-- Location Buttons -->
-                <div class="location-buttons">
-                    <a href="https://maps.app.goo.gl/8QWcbAGLvCtM8JR86" target="_blank" class="location-btn">
-                        <span class="location-icon">⛪</span>
-                        <span class="location-text">Եկեղեցի</span>
-                    </a>
-                    <a href="https://maps.app.goo.gl/r1F4dP7Kr7NH2G7n6" target="_blank" class="location-btn">
-                        <span class="location-icon">🏛️</span>
-                        <span class="location-text">Ռեստորան</span>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Footer message -->
-            <div class="footer-message animate-on-scroll">
-                <p>Սիրով սպասում ենք Ձեզ!</p>
-                <div class="divider"></div>
+                <a href="https://maps.app.goo.gl/8QWcbAGLvCtM8JR86" target="_blank" class="location-btn">
+                    <span class="location-icon">⛪</span>
+                    <span class="location-text">Եկեղեցի</span>
+                </a>
+                <a href="https://maps.app.goo.gl/r1F4dP7Kr7NH2G7n6" target="_blank" class="location-btn">
+                    <span class="location-icon">🏛️</span>
+                    <span class="location-text">Ռեստորան</span>
+                </a>
             </div>
         </div>
+
+        <!-- Footer message -->
+        <div class="footer-message animate-on-scroll">
+            <p>Սիրով սպասում ենք Ձեզ!</p>
+            <div class="divider"></div>
+        </div>
+    </div>
     </div>
 
     <script src="script.js"></script>

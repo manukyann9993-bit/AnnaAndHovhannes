@@ -156,6 +156,26 @@ body {
     text-shadow: var(--gold-glow);
     animation: fadeIn 1.5s ease-out;
     letter-spacing: 2px;
+    z-index: 2;
+    position: relative;
+}
+
+.couple-line-art {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.couple-svg {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
 }
 
 .ampersand {
@@ -537,6 +557,7 @@ body {
     font-weight: 500;
     color: var(--secondary-color);
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
 }
 
 /* Location Buttons */
@@ -547,6 +568,22 @@ body {
     padding: 0 10px;
 }
 
+.large-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.large-line-icon {
+    width: 80px;
+    height: 80px;
+    color: var(--primary-color);
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+    opacity: 0.9;
+}
+
 .location-btn {
     display: flex;
     align-items: center;
@@ -555,14 +592,14 @@ body {
     background: var(--bg-glass);
     border: 1px solid var(--primary-color);
     border-radius: 15px;
-    padding: 15px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: 600;
-    font-size: clamp(0.9rem, 3.5vw, 1rem);
+    font-size: 0.9rem;
     transition: all 0.3s ease;
     text-shadow: var(--white-shadow);
-    box-shadow: var(--gold-glow);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .location-btn:hover {
