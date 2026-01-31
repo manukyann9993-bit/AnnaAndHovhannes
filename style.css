@@ -17,12 +17,23 @@
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    color: var(--text-color);
+    overflow-x: hidden;
+    background-color: #000;
+    /* Fallback */
+}
+
+/* Fixed background for all devices */
+.background-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('couple-image-new.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    color: var(--text-color);
-    overflow-x: hidden;
+    z-index: -1;
 }
 
 /* Overlay for better text readability */
@@ -33,7 +44,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.45);
-    z-index: 1;
+    z-index: 0;
 }
 
 /* Main container */
@@ -55,17 +66,39 @@ body {
     animation: fadeInUp 1s ease-out;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Animation Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays for child elements if needed */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
 
 /* Header with couple names */
 .header {
